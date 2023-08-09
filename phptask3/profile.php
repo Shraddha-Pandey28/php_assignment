@@ -1,7 +1,6 @@
 <?php
 session_start();
 require 'connection.php';
-include 'link.php';
 $as = intval($_SESSION["id"]);
 $query = "SELECT * FROM profile WHERE id = $as";
 $result = mysqli_query($conn, $query);
@@ -13,6 +12,17 @@ if (mysqli_num_rows($result) > 0) {
     $hobbies = $data['hobbies'];
 }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+
 <form class="form-inline" action="aboutus.php" method="post">
     <div class="form-group">
         <label class="sr-only" for="interest">Topic of Interest:</label>
@@ -32,3 +42,5 @@ if (mysqli_num_rows($result) > 0) {
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
+</body>
+</html>

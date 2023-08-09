@@ -19,13 +19,13 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <!-- <li class="nav-item">
-          <a class="nav-link" href="http://localhost/phptask3/login.php">Login</a>
+          <a class="nav-link" href="login.php">Login</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost/phptask3/profile.php">Profile</a>
+          <a class="nav-link" href="profile.php">Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost/phptask3/logout.php">logout</a>
+          <a class="nav-link" href="logout.php">logout</a>
         </li>
       </ul>
       <form class="d-flex">
