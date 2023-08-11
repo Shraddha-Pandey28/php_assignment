@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root"; 
 $password = "Admin@1234";
-$database = "userlogin";
+$database = "ajax_assignment";
 // Create a connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 

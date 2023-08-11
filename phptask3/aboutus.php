@@ -29,11 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $result = mysqli_query($conn, $select_query);
     
     if (mysqli_num_rows($result) > 0) {
-        // Update existing record
         $update_query = "UPDATE profile SET interest='$interest', education='$education', profession='$profession', hobbies='$hobbies' WHERE id='$as'";
         mysqli_query($conn, $update_query);
     } else {
-        // Insert new record
         $insert_query = "INSERT INTO profile (id, interest, education, profession, hobbies) VALUES ('$as', '$interest', '$education', '$profession', '$hobbies')";
         mysqli_query($conn, $insert_query);
     }
@@ -50,7 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     echo "hobbies: " . $hobbies . "<br>";
     echo "<br>";
 
-    echo "<progress id='file' value='$percent' max='100'>$percent%</progress>";
     echo $percent."% completed.";
     echo "<br>";
     echo "<br>";
